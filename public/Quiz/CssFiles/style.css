@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #2C3E50;
+
+}
+.user input , .user button{
+    display: block;
+    width: 100%;
+}
+.user input{
+    margin-bottom: 50px;
+    width: 400px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    padding: 3px 0;
+    font-size: 24px;
+    text-align: center;
+}
+.user button{
+    padding: 12px 0;
+    font-size: 30px;
+    border-radius: 100px;
+    border: none;
+    color: #2C3E50;
+    cursor: pointer;
+    transition: .8s;
+    
+}
+/* .user button:disabled{
+    background: green;
+} */
+.user input:focus , .user button:focus{
+    outline: none;
+}
+.user input:focus{
+    background: transparent;
+}
+.user button:hover{
+    transform: translateY(-15px);
+}
+
+/* Quiz Page */
+.quiz{
+    width: 80%;
+    height: auto;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 80px;
+    border-radius: 50px;
+    
+}
+.quizHeader{
+    background-color: cyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px 50px 0 0;
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.quizHeader .userName{
+   margin-left: 30px;
+}
+.quizHeader .Time{
+    margin-right: 30px;
+ }
+ #min,#sec{
+     display: inline;
+ }
+.quizBody{
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 30px 0 0 30px; 
+}
+.quizBody ul{
+    margin-bottom: 35px;
+}
+.quizBody li{
+    list-style: none;
+    margin-top: 30px;
+    background: cyan;
+    width: 60%;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.quizBody li:hover{
+    background-color: #2C3E50;
+    color: #fff;
+    cursor: pointer;
+}
+.next{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px 80px;
+    border-radius: 50px;
+    border: none;
+    background: #2C3E50;
+    color: white;
+    display: none;
+}
+.next:hover{
+    background: violet;
+    color: #fff;
+}
+.next:focus{
+    outline: none;
+}
+.active{
+   
+    color: #2C3E50;
+    border: 2px solid #2C3E50;
+}
+.result{
+    text-align: center;
+}
+.result-icon{
+    font-size: 100px;
+    color: #fff;
+}
+.result .name , .result .score , .result .time ,.result .remarks{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 35px;
+}
